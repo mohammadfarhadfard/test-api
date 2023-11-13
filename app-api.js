@@ -7,7 +7,8 @@ https.get('https://api.kucoin.com/api/v1/market/orderbook/level1?symbol=BTC-USDT
     data += chunk;
   });
 
-  resp.on('end', () => {
+  resp.on('end' ,() => {
+    
     console.log(JSON.parse(data));
   });
 
